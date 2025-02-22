@@ -173,6 +173,9 @@ local Button = Tab3:CreateButton({
    Name = "Green Platter (you need 60 sugar cubes to buy it obviously)",
    Callback = function()
     local cratestoregui = game.Players.LocalPlayer.PlayerGui.MainGui.Info.CrateStoreFrame.ScrollingFrame
+			local templateclone = cratestoregui.Template:Clone()
+			cratestoregui.Template.Name = "crate1"
+			templateclone.Parent = cratestoregui
 	cratestoregui.crate1.Name = "crateGreen"
 	cratestoregui.Template.Name = "crate1"
       Rayfield:Notify({
