@@ -159,7 +159,7 @@ local Button = Tab2:CreateButton({
 })
 
 local Button = Tab2:CreateButton({
-   Name = "Teleport to Summertime Shore (Summer Map)",
+   Name = "Teleport to Summertime Shores (Summer Map)",
    Callback = function()
    local maptele = "SummertimeBeach"
    game.ReplicatedStorage.Events.StoryTransitionEvent:Fire("whats up guys today we're going to a really cool map!!", "rbxassetid://10670510726")
@@ -174,10 +174,10 @@ local Button = Tab3:CreateButton({
    Callback = function()
     local cratestoregui = game.Players.LocalPlayer.PlayerGui.MainGui.Info.CrateStoreFrame.ScrollingFrame
 			local templateclone = cratestoregui.Template:Clone()
+			templateclone.Parent = workspace
 			cratestoregui.Template.Name = "crate1"
-			templateclone.Parent = cratestoregui
+		templateclone.Parent = cratestoregui
 	cratestoregui.crate1.Name = "crateGreen"
-	cratestoregui.Template.Name = "crate1"
       Rayfield:Notify({
    Title = "Done!",
    Content = "Done, go to Cubert's Shop and click on Platters, and click on Formal Platter to view Green Platter.",
